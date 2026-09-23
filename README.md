@@ -54,3 +54,7 @@ ON p.product_id = od.product_id
 GROUP BY p.product_name
 ORDER BY revenue DESC;
 
+## Entity Relationship Diagram
+ 
+docs/inventory_management_ERD.png
+
