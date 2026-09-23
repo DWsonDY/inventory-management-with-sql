@@ -1,4 +1,4 @@
-##PRDODUCT & SUPPLIER REPORT##
+## PRDODUCT & SUPPLIER REPORT
 select
 	p.product_name,
 	p.category,
@@ -8,7 +8,7 @@ from products p
 join suppliers s
 	on p.supplier_id = s.supplier_id;
 
-##ORDER_DETAILS REPORT##
+## ORDER_DETAILS REPORT
 SELECT
 	o.order_id,
 	c.customer_name,
@@ -24,7 +24,7 @@ join customers c
 join products p
 	on od.product_id = p.product_id;
 
-##REVENUE REPORT##
+## REVENUE REPORT
 select
 	p.product_name,
 	SUM(od.quantity) as quantity_sold,
@@ -35,7 +35,7 @@ join order_details od
 group by p.product_name
 order by revenue DESC;
 
-##TOP CUSTOMERS REPORT##
+## TOP CUSTOMERS REPORT
 select
 	c.customer_name,
 	SUM(od.quantity * p.unit_price) as amount_spent
