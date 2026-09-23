@@ -58,3 +58,7 @@ ORDER BY revenue DESC;
  
 docs/inventory_management_ERD.png
 
+## Author
+
+Ivaldo Gilson Jorge Chilundo
+
